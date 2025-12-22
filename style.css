@@ -1,3 +1,17 @@
+:root {
+	--light-primary: #f9faf8;
+	--light-secondary: #e5e7eb;
+	--dark-primary: #1f2937;
+	--accent: #3882f6;
+
+	--ff: 'roboto';
+	--fs-3xl: 48px;
+	--fs-2xl: 36px;
+	--fs-xl: 24px;
+	--fs-l: 18px;
+	--fs-m: 16px;
+}
+
 *,
 *::after,
 *::before {
