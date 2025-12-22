@@ -21,6 +21,41 @@
 	padding: 0;
 }
 
+body {
+	font-family: var(--ff), sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
 .container {
-	width: 768px;
+	width: 900px;
+	margin: 0 auto;
+}
+
+/* header */
+.header {
+	background-color: #1f2937;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 0;
+}
+
+.nav-logo {
+	color: var(--light-primary);
+	font-weight: bold;
+	font-size: var(--fs-xl);
+}
+
+.nav-links {
+	display: flex;
+	gap: 16px;
+}
+
+.link {
+	color: var(--light-secondary);
 }
