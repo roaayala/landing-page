@@ -159,7 +159,6 @@ a {
 }
 
 .quote-text {
-	text-align: center;
 	font-size: var(--fs-2xl);
 	font-weight: 300;
 	font-style: italic;
@@ -172,3 +171,5 @@ a {
 	font-weight: bold;
 	font-size: var(--fs-xl);
 }
+
+/* call to action */
