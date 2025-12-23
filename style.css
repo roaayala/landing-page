@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-	--light-primary: #f9faf8;
-	--light-secondary: #e5e7eb;
-	--dark-primary: #1f2937;
+	--light-darker: #e5e7eb;
+	--light: #f9faf8;
+	--light-lighter: #fff;
+	--dark-darker: #1f2937;
+	--dark: #2e2e2e;
+	--dark-lighter: #555;
 	--accent: #3882f6;
 
 	--ff: 'roboto';
@@ -24,7 +27,8 @@
 
 body {
 	font-family: var(--ff), sans-serif;
-	line-height: 1.6;
+	line-height: 1.5;
+	color: var(--dark);
 }
 
 a {
@@ -38,7 +42,7 @@ a {
 
 .button {
 	display: inline-block;
-	color: var(--light-primary);
+	color: var(--light);
 	font-weight: 600;
 	background-color: var(--accent);
 	border-radius: 8px;
@@ -47,7 +51,7 @@ a {
 
 /* header */
 .header {
-	background-color: #1f2937;
+	background-color: var(--dark-darker);
 }
 
 /* header nav */
@@ -58,7 +62,7 @@ a {
 }
 
 .nav-logo {
-	color: var(--light-primary);
+	color: var(--light);
 	font-weight: bold;
 	font-size: var(--fs-xl);
 }
@@ -70,7 +74,7 @@ a {
 }
 
 .link {
-	color: var(--light-secondary);
+	color: var(--light-darker);
 }
 
 /* header hero */
@@ -88,7 +92,7 @@ a {
 }
 
 .hero-title {
-	color: var(--light-primary);
+	color: var(--light);
 	font-weight: 900;
 	font-size: var(--fs-3xl);
 	line-height: 1;
@@ -96,7 +100,7 @@ a {
 }
 
 .hero-subtext {
-	color: var(--light-secondary);
+	color: var(--light-darker);
 	font-size: var(--fs-l);
 	line-height: 1.25;
 	margin-bottom: 16px;
@@ -106,4 +110,32 @@ a {
 	max-width: 50%;
 }
 
-/* contents */
+/* information */
+.cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 48px;
+	padding: 0 64px;
+}
+
+.section-title {
+	color: var(--dark-darker);
+	text-align: center;
+	font-size: var(--fs-2xl);
+	margin-bottom: 16px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.card-image {
+	height: 180px;
+}
+
+.card-description {
+	text-align: center;
+	color: var(--dark-lighter);
+}
